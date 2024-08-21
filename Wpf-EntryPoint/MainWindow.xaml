@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid Margin="10,10,644,348">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Sms massivi" VerticalAlignment="Top" Width="126"/>
+            <StackPanel Margin="10,26,10,348">
+                <Button Content="Nuova Lista"  Click="OnClick_NuovaLista" />
+                <Button Content="NRI"  Click="OnClick_NRI"/>
+            </StackPanel>
+
+        </Grid>
 
     </Grid>
 </Window>

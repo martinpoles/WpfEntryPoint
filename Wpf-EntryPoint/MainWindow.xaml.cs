@@ -20,5 +20,17 @@ namespace Wpf_EntryPoint
         {
             InitializeComponent();
         }
+
+        private void OnClick_NuovaLista(object sender, RoutedEventArgs e)
+        {
+            // Azione da eseguire quando il pulsante viene cliccato
+            MessageBox.Show("Pulsante Nuova cliccato!");
+        }
+
+        private void OnClick_NRI(object sender, RoutedEventArgs e)
+        {
+            // Azione da eseguire quando il pulsante viene cliccato
+            MessageBox.Show("Pulsante NRI cliccato!");
+        }
     }
 }

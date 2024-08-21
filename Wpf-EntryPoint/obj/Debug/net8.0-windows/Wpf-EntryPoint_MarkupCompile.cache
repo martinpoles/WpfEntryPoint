@@ -1,5 +1,5 @@
 ﻿Wpf-EntryPoint
-1.0.0.0
+
 
 winexe
 C#
@@ -12,7 +12,7 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\App.xaml
 11407045341
 
-61399423356
+4849452356
 1981385397204
 MainWindow.xaml;
 

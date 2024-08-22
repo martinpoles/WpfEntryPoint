@@ -7,10 +7,52 @@
              xmlns:local1="clr-namespace:Wpf_EntryPoint.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <!--<UserControl.DataContext>
-        <local1:MainViewModel/>
-    </UserControl.DataContext>-->
+
     <Grid>
-        <TextBlock Text="Questa è la view Nuova Lista" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel Margin="10">
+            <ComboBox x:Name="OptionsComboBox"
+                      Width="300"
+                      Height="30"
+                      Margin="5" />
+        </StackPanel>
+
+        <TextBox x:Name="NumericInputField"
+                 Width="200"
+                 Height="30"
+                 Margin="10"
+                 HorizontalAlignment="Left"
+                 PreviewTextInput="NumericInputField_PreviewTextInput"
+                 ToolTip="Inserisci solo numeri"/>
+
+        <StackPanel Orientation="Horizontal" Margin="110,71,-90,-51">
+            <TextBox x:Name="FilePathTextBox"
+                     Width="300"
+                     Height="30"
+                     Margin="0,0,10,0"
+                     VerticalAlignment="Center"
+                     IsReadOnly="True"
+                     ToolTip="Percorso del file selezionato"/>
+            <Button Content="Sfoglia"
+                    Width="100"
+                    Height="30"
+                    VerticalAlignment="Center"
+                    Click="BrowseButton_Click"/>
+        </StackPanel>
+
+        <Button Content="Inserisci Nuova Campagna"
+                Width="150"
+                Height="30"
+                HorizontalAlignment="Left"
+                Margin="500,144,0,276"
+                Click="OpenInsertNewCampagnaWindow_Click"/>
+
+        <Button Content="Elabora"
+                Width="150"
+                Height="30"
+                HorizontalAlignment="Left"
+                Margin="306,210,0,210"
+                Click="Elabora_Click"/>
+
+
     </Grid>
 </UserControl>

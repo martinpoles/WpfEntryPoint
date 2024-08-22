@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\App.xaml
-11407045341
+4-1726156995
 
-4849452356
+121311329755
 1981385397204
-MainWindow.xaml;
+MainWindow.xaml;Views\LandingPage_UserController.xaml;Views\SmsMassivi_NuovaLista_UserController.xaml;Views\SmsMassivi_Rni_UserController.xaml;
 
 False
 

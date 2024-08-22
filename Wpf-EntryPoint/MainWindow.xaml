@@ -4,21 +4,29 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_EntryPoint"
+        xmlns:local1="clr-namespace:Wpf_EntryPoint.ViewModels"
+        xmlns:local2="clr-namespace:Wpf_EntryPoint.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="AegisFlow" Height="450" Width="800">
+
+     <!--Imposta la MainViewModel come DataContext della finestra principale--> 
+    <Window.DataContext>
+        <local1:MainViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type local1:SmsMassivi_NuovaLista_ViewModel}">
+            <local2:SmsMassivi_NuovaLista_UserController/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type local1:SmsMassivi_Rni_ViewModel}">
+            <local2:SmsMassivi_Rni_UserController/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type local1:LandingPage_ViewModel}">
+            <local2:LandingPage_UserController/>
+        </DataTemplate>
+    </Window.Resources>
+
     <Grid>
-        <Grid Margin="10,10,644,348">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-            <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Sms massivi" VerticalAlignment="Top" Width="126"/>
-            <StackPanel Margin="10,26,10,348">
-                <Button Content="Nuova Lista"  Click="OnClick_NuovaLista" />
-                <Button Content="NRI"  Click="OnClick_NRI"/>
-            </StackPanel>
-
-        </Grid>
-
+        <ContentControl Content="{Binding CurrentView}" />
     </Grid>
 </Window>

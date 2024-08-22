@@ -7,7 +7,27 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Views\LandingPage_UserController.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SmsMassivi_NuovaLista_UserController.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SmsMassivi_Rni_UserController.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LandingPage_UserController.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SmsMassivi_NuovaLista_UserController.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SmsMassivi_Rni_UserController.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

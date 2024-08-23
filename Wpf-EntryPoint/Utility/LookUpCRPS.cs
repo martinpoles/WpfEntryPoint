@@ -10,12 +10,12 @@ using Wpf_EntryPoint.Models;
 
 namespace Wpf_EntryPoint.Utility
 {
-    public class ReadWriteData
+    public class LookUpCRPS
     {
 
         public Dictionary<string, CRPS> lookUpDict { get; set; }
 
-        public ReadWriteData()
+        public LookUpCRPS()
         {
             lookUpDict = new Dictionary<string, CRPS>();
 
@@ -113,5 +113,19 @@ namespace Wpf_EntryPoint.Utility
 
             lookUpDict = sortedDict;
         }
+
+
     }
+
+    public class TemplateForSms 
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Attribute3 { get; set; }
+        public string Attribute4 { get; set; }
+        public string PhoneNumber { get; set; }
+        public string OldIdLista { get; set; }
+
+    }
+
 }

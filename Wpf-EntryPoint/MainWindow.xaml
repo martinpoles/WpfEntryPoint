@@ -9,24 +9,25 @@
         mc:Ignorable="d"
         Title="AegisFlow" Height="450" Width="800">
 
-     <!--Imposta la MainViewModel come DataContext della finestra principale--> 
+    <!--Imposta la MainViewModel come DataContext della finestra principale-->
     <Window.DataContext>
         <local1:MainViewModel/>
     </Window.DataContext>
 
     <Window.Resources>
-        <DataTemplate DataType="{x:Type local1:SmsMassivi_NuovaLista_ViewModel}">
-            <local2:SmsMassivi_NuovaLista_UserController/>
-        </DataTemplate>
-        <DataTemplate DataType="{x:Type local1:SmsMassivi_Rni_ViewModel}">
-            <local2:SmsMassivi_Rni_UserController/>
-        </DataTemplate>
-        <DataTemplate DataType="{x:Type local1:LandingPage_ViewModel}">
-            <local2:LandingPage_UserController/>
-        </DataTemplate>
-    </Window.Resources>
 
-    <Grid>
+        <DataTemplate DataType="{x:Type local1:SmsMassivi_NuovaLista_ViewModel}">
+                <local2:SmsMassivi_NuovaLista_UserController/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type local1:SmsMassivi_Rni_ViewModel}">
+                <local2:SmsMassivi_Rni_UserController/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type local1:LandingPage_ViewModel}">
+                <local2:LandingPage_UserController/>
+            </DataTemplate>
+        </Window.Resources>
+
+        <Grid>
         <ContentControl Content="{Binding CurrentView}" />
     </Grid>
 </Window>

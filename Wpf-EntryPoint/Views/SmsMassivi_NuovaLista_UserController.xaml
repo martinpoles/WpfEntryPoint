@@ -9,50 +9,99 @@
              d:DesignHeight="450" d:DesignWidth="800">
 
     <Grid>
-        <StackPanel Margin="10">
-            <ComboBox x:Name="OptionsComboBox"
-                      Width="300"
-                      Height="30"
-                      Margin="5" />
-        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
+        <!-- ComboBox partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
+        <ComboBox x:Name="OptionsComboBox"
+                  Grid.Column="1"     
+                  Grid.ColumnSpan="3"
+                  Grid.Row="0"
+                  Background="LightGray"
+                  Margin="10"
+                  MaxHeight="200"
+                  MaxWidth="500"
+                  IsEditable="True"  
+                  IsReadOnly="False"
+                  StaysOpenOnEdit="True"
+
+
+            />
+
+        <!-- TextBox per l'input numerico, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
         <TextBox x:Name="NumericInputField"
-                 Width="200"
-                 Height="30"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="3"
+                 Grid.Row="1"
+                 MaxHeight="200"
+                 MaxWidth="500"
                  Margin="10"
-                 HorizontalAlignment="Left"
                  PreviewTextInput="NumericInputField_PreviewTextInput"
                  ToolTip="Inserisci solo numeri"/>
 
-        <StackPanel Orientation="Horizontal" Margin="110,71,-90,-51">
-            <TextBox x:Name="FilePathTextBox"
-                     Width="300"
-                     Height="30"
-                     Margin="0,0,10,0"
-                     VerticalAlignment="Center"
-                     IsReadOnly="True"
-                     ToolTip="Percorso del file selezionato"/>
-            <Button Content="Sfoglia"
-                    Width="100"
-                    Height="30"
-                    VerticalAlignment="Center"
-                    Click="BrowseButton_Click"/>
-        </StackPanel>
+        <!-- TextBox per il percorso del file, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
+        <TextBox x:Name="FilePathTextBox"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="2"
+                 Grid.Row="2"
+                 MaxHeight="200"
+                 MaxWidth="300"
+                 Margin="10"
+                 VerticalAlignment="Center"
+                 IsReadOnly="True"
+                 ToolTip="Percorso del file selezionato"/>
 
+        <!-- Button per sfogliare, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
+        <Button Content="Sfoglia"
+                Grid.Column="3"
+                Grid.ColumnSpan="1"
+                Grid.Row="2"
+                MaxHeight="200"
+                MinHeight="100"
+                Margin="10"
+                VerticalAlignment="Center"
+                Click="BrowseButton_Click"/>
+
+        <!-- Button per inserire nuova campagna, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
         <Button Content="Inserisci Nuova Campagna"
-                Width="150"
-                Height="30"
-                HorizontalAlignment="Left"
-                Margin="500,144,0,276"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                Grid.Row="5"
+                MaxHeight="200"
+                
+                MinHeight="100"
+                Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
                 Click="OpenInsertNewCampagnaWindow_Click"/>
 
+        <!-- Button per elaborare, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
         <Button Content="Elabora"
-                Width="150"
-                Height="30"
-                HorizontalAlignment="Left"
-                Margin="306,210,0,210"
+                Grid.Column="2"
+                Grid.ColumnSpan="1"
+                Grid.Row="3"
+                MaxHeight="200"
+                MinHeight="100"
+                MinWidth="200"
+                Margin="10"        
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
                 Click="Elabora_Click"/>
-
 
     </Grid>
 </UserControl>

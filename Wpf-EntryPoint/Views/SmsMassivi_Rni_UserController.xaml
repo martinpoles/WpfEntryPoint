@@ -8,9 +8,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-    <!--<UserControl.DataContext>
-        <local1:MainViewModel/>
-    </UserControl.DataContext>-->
+
     <Grid>
         <TextBlock Text="Questa è la view RNI" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 

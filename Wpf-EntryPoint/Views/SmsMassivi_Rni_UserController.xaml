@@ -10,7 +10,85 @@
 
 
     <Grid>
-        <TextBlock Text="Questa è la view RNI" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-   </Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+        <!-- TextBox per il percorso del file, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
+        <TextBox x:Name="File1InputField1"
+          Grid.Column="1"
+          Grid.ColumnSpan="2"
+          Grid.Row="1"
+          MaxHeight="200"
+          MaxWidth="300"
+          Margin="10"
+          VerticalAlignment="Center"
+          IsReadOnly="True"
+          ToolTip="Percorso del file selezionato"/>
+
+        <!-- Button per sfogliare, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
+        <Button Content="Sfoglia"
+         Grid.Column="3"
+         Grid.ColumnSpan="1"
+         Grid.Row="1"
+         MaxHeight="200"
+         MinHeight="100"
+         Margin="10"
+         VerticalAlignment="Center"
+         Click="BrowseButton1_Click"/>
+
+        <!-- TextBox per il percorso del file, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
+        <TextBox x:Name="File1InputField2"
+          Grid.Column="1"
+          Grid.ColumnSpan="2"
+          Grid.Row="2"
+          MaxHeight="200"
+          MaxWidth="300"
+          Margin="10"
+          VerticalAlignment="Center"
+          IsReadOnly="True"
+          ToolTip="Percorso del file selezionato"/>
+
+        <!-- Button per sfogliare, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
+        <Button Content="Sfoglia"
+         Grid.Column="3"
+         Grid.ColumnSpan="1"
+         Grid.Row="2"
+         MaxHeight="200"
+         MinHeight="100"
+         Margin="10"
+         VerticalAlignment="Center"
+         Click="BrowseButton2_Click"/>
+
+        <!-- Button per elaborare, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
+        <Button Content="Elabora"
+                Grid.Column="2"
+                Grid.ColumnSpan="1"
+                Grid.Row="3"
+                MaxHeight="200"
+                MinHeight="100"
+                MinWidth="200"
+                Margin="10"        
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="Elabora_Click"/>
+
+
+    </Grid>
 </UserControl>

@@ -108,7 +108,7 @@ namespace Wpf_EntryPoint.Views
             try
             {
                 // Ho recuperato i dati del file da processare
-                List<TemplateForSms> dataPassage = new List<TemplateForSms>();
+                List<TemplateForSmsNuovo> dataPassage = new List<TemplateForSmsNuovo>();
                 FileInfo fileInfo = new FileInfo(filePath);
                 using (ExcelPackage package = new ExcelPackage(fileInfo))
                 {
@@ -122,7 +122,7 @@ namespace Wpf_EntryPoint.Views
                     for (int row = 2; row <= worksheet.Dimension.End.Row; row++)
                     {
                         // Genera nuovo oggetto
-                        TemplateForSms entryDataFile = new TemplateForSms
+                        TemplateForSmsNuovo entryDataFile = new TemplateForSmsNuovo
                         {
                             FirstName = worksheet.Cells[row, 3].Text,
                             LastName = worksheet.Cells[row, 4].Text,
@@ -207,7 +207,7 @@ namespace Wpf_EntryPoint.Views
                     }
 
                     // Recupero la cartella di output
-                    var directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "DataFile", "Output");
+                    var directoryPath = Directory.GetCurrentDirectory() + "\\DataFile\\OutData\\SMS\\Nuova Lista";
 
                     // Prefisso da rimuovere dal nome del file
                     var prefix = "ExportData_";

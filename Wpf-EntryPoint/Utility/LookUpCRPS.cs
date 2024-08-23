@@ -117,7 +117,7 @@ namespace Wpf_EntryPoint.Utility
 
     }
 
-    public class TemplateForSms 
+    public class TemplateForSmsNuovo 
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -126,6 +126,22 @@ namespace Wpf_EntryPoint.Utility
         public string PhoneNumber { get; set; }
         public string OldIdLista { get; set; }
 
+    }
+
+    public class TemplateForSmsRNI
+    {
+        public string IdCampagna { get; set; }
+        public string Nome { get; set; }
+        public string Cognome { get; set; }
+        public string NrTelefono { get; set; }
+        public string Stato { get; set; }
+        public string Idirizzo { get; set; }
+        public string Cap { get; set; }
+        public string Citta { get; set; }
+        public string Provincia { get; set; }
+        public string Regione { get; set; }
+        public string NomeSerbatoio { get; set; }
+        public string OldIdLista { get; set; }
     }
 
 }

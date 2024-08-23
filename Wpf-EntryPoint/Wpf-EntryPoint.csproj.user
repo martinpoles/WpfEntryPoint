@@ -10,6 +10,9 @@
     <Compile Update="Views\LandingPage_UserController.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\PuliziaNumeri_39_UserController.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\SmsMassivi_NuovaLista_UserController.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -25,6 +28,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\LandingPage_UserController.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PuliziaNumeri_39_UserController.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\SmsMassivi_NuovaLista_UserController.xaml">

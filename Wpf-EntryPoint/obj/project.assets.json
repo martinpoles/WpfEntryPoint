@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0-windows7.0": {
+      "CsvHelper/33.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CsvHelper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "EPPlus/4.5.3.3": {
         "type": "package",
         "dependencies": {
@@ -192,6 +205,22 @@
             "rid": "win"
           }
         }
+      },
+      "Ookii.Dialogs.Wpf/5.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0-windows7.0/Ookii.Dialogs.Wpf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Ookii.Dialogs.Wpf.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
         "type": "package",
@@ -1286,6 +1315,34 @@
     }
   },
   "libraries": {
+    "CsvHelper/33.0.1": {
+      "sha512": "fev4lynklAU2A9GVMLtwarkwaanjSYB4wUqO2nOJX5hnzObORzUqVLe+bDYCUyIIRQM4o5Bsq3CcyJR89iMmEQ==",
+      "type": "package",
+      "path": "csvhelper/33.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.33.0.1.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net462/CsvHelper.dll",
+        "lib/net462/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net48/CsvHelper.dll",
+        "lib/net48/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/net7.0/CsvHelper.dll",
+        "lib/net7.0/CsvHelper.xml",
+        "lib/net8.0/CsvHelper.dll",
+        "lib/net8.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    },
     "EPPlus/4.5.3.3": {
       "sha512": "aZnWmrQNRQuV/2Kwu+pTv1HVX1ZBvoGKw2GuzUOmBRpOD09sYJFGHww8NVQd3IIeb1vqosPDFZgND/1nxTzFKQ==",
       "type": "package",
@@ -1492,6 +1549,30 @@
         "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Ookii.Dialogs.Wpf/5.0.1": {
+      "sha512": "iZNnZwqTpK0cfR0vkotncP1c025/PHlIdzc7iEKBYwhVv1V0zXp9/RT/O0kMhsmlwXqRxxbE4pdhfinbJXtjPg==",
+      "type": "package",
+      "path": "ookii.dialogs.wpf/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net462/Ookii.Dialogs.Wpf.dll",
+        "lib/net462/Ookii.Dialogs.Wpf.pdb",
+        "lib/net462/Ookii.Dialogs.Wpf.xml",
+        "lib/net5.0-windows7.0/Ookii.Dialogs.Wpf.dll",
+        "lib/net5.0-windows7.0/Ookii.Dialogs.Wpf.pdb",
+        "lib/net5.0-windows7.0/Ookii.Dialogs.Wpf.xml",
+        "lib/net6.0-windows7.0/Ookii.Dialogs.Wpf.dll",
+        "lib/net6.0-windows7.0/Ookii.Dialogs.Wpf.pdb",
+        "lib/net6.0-windows7.0/Ookii.Dialogs.Wpf.xml",
+        "lib/netcoreapp3.1/Ookii.Dialogs.Wpf.dll",
+        "lib/netcoreapp3.1/Ookii.Dialogs.Wpf.pdb",
+        "lib/netcoreapp3.1/Ookii.Dialogs.Wpf.xml",
+        "ookii.dialogs.wpf.5.0.1.nupkg.sha512",
+        "ookii.dialogs.wpf.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
@@ -4390,7 +4471,9 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "EPPlus >= 4.5.3.3"
+      "CsvHelper >= 33.0.1",
+      "EPPlus >= 4.5.3.3",
+      "Ookii.Dialogs.Wpf >= 5.0.1"
     ]
   },
   "packageFolders": {
@@ -4438,9 +4521,17 @@
       "net8.0-windows7.0": {
         "targetAlias": "net8.0-windows",
         "dependencies": {
+          "CsvHelper": {
+            "target": "Package",
+            "version": "[33.0.1, )"
+          },
           "EPPlus": {
             "target": "Package",
             "version": "[4.5.3.3, )"
+          },
+          "Ookii.Dialogs.Wpf": {
+            "target": "Package",
+            "version": "[5.0.1, )"
           }
         },
         "imports": [

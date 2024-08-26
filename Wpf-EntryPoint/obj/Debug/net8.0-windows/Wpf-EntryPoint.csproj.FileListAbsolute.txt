@@ -12,6 +12,7 @@ C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\bin\Deb
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\bin\Debug\net8.0-windows\Ookii.Dialogs.Wpf.dll
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\bin\Debug\net8.0-windows\System.Xml.XPath.XmlDocument.dll
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\obj\Debug\net8.0-windows\Wpf-EntryPoint.csproj.AssemblyReference.cache
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\obj\Debug\net8.0-windows\Windows\InsertNewCampagna.baml
@@ -41,3 +42,4 @@ C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\obj\Deb
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\obj\Debug\net8.0-windows\Wpf-EntryPoint.pdb
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\obj\Debug\net8.0-windows\Wpf-EntryPoint.genruntimeconfig.cache
 C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\obj\Debug\net8.0-windows\ref\Wpf-EntryPoint.dll
+C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\bin\Debug\net8.0-windows\CsvHelper.dll

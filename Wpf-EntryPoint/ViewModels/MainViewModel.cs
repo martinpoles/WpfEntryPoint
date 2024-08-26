@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel;
 using System.Windows.Input;
-using Wpf_EntryPoint.Views;
 
 namespace Wpf_EntryPoint.ViewModels
 {

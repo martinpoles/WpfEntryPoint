@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "y9xLXoNk8MM=",
+  "dgSpecHash": "bZghSlFVc4Y=",
   "success": true,
   "projectFilePath": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ssoko\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
     "C:\\Users\\ssoko\\.nuget\\packages\\epplus\\4.5.3.3\\epplus.4.5.3.3.nupkg.sha512",
     "C:\\Users\\ssoko\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.0\\microsoft.extensions.configuration.3.1.0.nupkg.sha512",
     "C:\\Users\\ssoko\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.0\\microsoft.extensions.configuration.abstractions.3.1.0.nupkg.sha512",
@@ -16,6 +17,7 @@
     "C:\\Users\\ssoko\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ssoko\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\ssoko\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\ssoko\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.1\\ookii.dialogs.wpf.5.0.1.nupkg.sha512",
     "C:\\Users\\ssoko\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\ssoko\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\ssoko\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

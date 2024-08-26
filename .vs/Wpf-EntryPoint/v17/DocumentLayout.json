@@ -3,12 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\progettoautomazione\\wpf-entrypoint\\wpf-entrypoint\\views\\smsmassivi_nuovalista_usercontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\views\\smsmassivi_nuovalista_usercontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\progettoautomazione\\wpf-entrypoint\\wpf-entrypoint\\views\\landingpage_usercontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\views\\landingpage_usercontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\progettoautomazione\\wpf-entrypoint\\wpf-entrypoint\\views\\pulizianumeri_39_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\views\\pulizianumeri_39_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\progettoautomazione\\wpf-entrypoint\\wpf-entrypoint\\views\\pulizianumeri_39_usercontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -35,38 +31,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SmsMassivi_NuovaLista_UserController.xaml",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_NuovaLista_UserController.xaml",
-              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\SmsMassivi_NuovaLista_UserController.xaml",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_NuovaLista_UserController.xaml",
-              "RelativeToolTip": "Wpf-EntryPoint\\Views\\SmsMassivi_NuovaLista_UserController.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-23T15:29:48.925Z",
+              "Title": "PuliziaNumeri_39_UserController.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml.cs",
+              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml.cs",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml.cs",
+              "RelativeToolTip": "Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAqwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T21:27:02.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PuliziaNumeri_39_UserController.xaml",
               "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml",
               "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml",
               "ToolTip": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml",
               "RelativeToolTip": "Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-23T15:23:09.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LandingPage_UserController.xaml",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\LandingPage_UserController.xaml",
-              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\LandingPage_UserController.xaml",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\LandingPage_UserController.xaml",
-              "RelativeToolTip": "Wpf-EntryPoint\\Views\\LandingPage_UserController.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-23T15:13:53.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T21:25:29.076Z"
             }
           ]
         }

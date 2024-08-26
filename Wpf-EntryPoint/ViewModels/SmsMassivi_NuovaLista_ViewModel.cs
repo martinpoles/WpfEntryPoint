@@ -2,7 +2,7 @@
 
 namespace Wpf_EntryPoint.ViewModels
 {
-    class SmsMassivi_NuovaLista_ViewModel
+    class SmsMassivi_NuovaLista_ViewModel : INotifyPropertyChanged
     {
         private string _message = "Benvenuto nel Nuova Lista";
         public string Message

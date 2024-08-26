@@ -41,10 +41,9 @@ namespace Wpf_EntryPoint.ViewModels
         {
             CurrentView = new SmsMassivi_Rni_ViewModel();
         }
-
         private void ShowPulizia39()
         {
-            CurrentView = new PuliziaNumeri_39_UserController();
+            CurrentView = new PuliziaNumeri_39_ViewModel();
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

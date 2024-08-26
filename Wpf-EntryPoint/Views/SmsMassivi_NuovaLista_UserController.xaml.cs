@@ -1,7 +1,5 @@
 ﻿using Microsoft.Win32;
 using OfficeOpenXml;
-using OfficeOpenXml.FormulaParsing.Excel.Functions.Text;
-using OfficeOpenXml.FormulaParsing.Utilities;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows;
@@ -9,8 +7,8 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using Wpf_EntryPoint.Models;
 using Wpf_EntryPoint.Utility;
-using Wpf_EntryPoint.ViewModels;
 using Wpf_EntryPoint.Windows;
+
 namespace Wpf_EntryPoint.Views
 {
     /// <summary>

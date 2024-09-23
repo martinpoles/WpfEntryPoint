@@ -1,22 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\",
+  "WorkspaceRootPath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\progettoautomazione\\wpf-entrypoint\\wpf-entrypoint\\utility\\gfyf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\utility\\gfyf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\progettoautomazione\\wpf-entrypoint\\wpf-entrypoint\\views\\pulizianumeri_39_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\views\\pulizianumeri_39_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\progettoautomazione\\wpf-entrypoint\\wpf-entrypoint\\views\\smsmassivi_rni_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\progettoautomazione\\wpf-entrypoint\\wpf-entrypoint\\views\\smsmassivi_rni_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\views\\smsmassivi_rni_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\progettoautomazione\\wpf-entrypoint\\wpf-entrypoint\\views\\smsmassivi_nuovalista_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\views\\smsmassivi_nuovalista_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\progettoautomazione\\wpf-entrypoint\\wpf-entrypoint\\views\\smsmassivi_rni_usercontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\views\\smsmassivi_rni_usercontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +17,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 464,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -38,54 +30,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SmsMassivi_Rni_UserController.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
-              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
-              "RelativeToolTip": "Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
-              "ViewState": "AQIAAMkAAAAAAAAAAAAgwPkAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T11:22:25.037Z",
+              "DocumentIndex": 1,
+              "Title": "SmsMassivi_Rni_UserController.xaml",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml",
+              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml",
+              "RelativeToolTip": "Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-23T11:33:23.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GFYF.cs",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Utility\\GFYF.cs",
-              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Utility\\GFYF.cs",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Utility\\GFYF.cs",
-              "RelativeToolTip": "Wpf-EntryPoint\\Utility\\GFYF.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAkwGsAAAANAAAA",
+              "Title": "SmsMassivi_Rni_UserController.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
+              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
+              "RelativeToolTip": "Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAcwEsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T10:31:15.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SmsMassivi_NuovaLista_UserController.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_NuovaLista_UserController.xaml.cs",
-              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\SmsMassivi_NuovaLista_UserController.xaml.cs",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_NuovaLista_UserController.xaml.cs",
-              "RelativeToolTip": "Wpf-EntryPoint\\Views\\SmsMassivi_NuovaLista_UserController.xaml.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAIwMEAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T10:07:05.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PuliziaNumeri_39_UserController.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml.cs",
-              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml.cs",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml.cs",
-              "RelativeToolTip": "Wpf-EntryPoint\\Views\\PuliziaNumeri_39_UserController.xaml.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAkwFMAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T09:57:52.861Z",
+              "WhenOpened": "2024-09-13T09:35:09.395Z",
               "EditorCaption": ""
             }
           ]

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\obj\Debug\net8.0-windows\
+C:\Users\ssoko\Desktop\Personal\Code\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\obj\Debug\net8.0-windows\
 Wpf_EntryPoint
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\ssoko\Desktop\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\App.xaml
+C:\Users\ssoko\Desktop\Personal\Code\ProgettoAutomazione\Wpf-EntryPoint\Wpf-EntryPoint\App.xaml
 6292497624
 
-191931644015
-219-1078133250
+21-1932588324
+245-598726692
 MainWindow.xaml;Views\LandingPage_UserController.xaml;Views\PuliziaNumeri_39_UserController.xaml;Views\SmsMassivi_NuovaLista_UserController.xaml;Views\SmsMassivi_Rni_UserController.xaml;Windows\InsertNewCampagna.xaml;
 
 False

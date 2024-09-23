@@ -8,7 +8,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -29,66 +28,88 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
+        <!-- DatePicker per la data di inizio -->
+        <DatePicker x:Name="StartDatePicker"
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    Margin="5"
+                    VerticalAlignment="Center"
+                    ToolTip="Data di inizio" />
 
-        <!-- TextBox per il percorso del file, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
-        <TextBox x:Name="File1InputField1"
-          Grid.Column="1"
-          Grid.ColumnSpan="2"
-          Grid.Row="1"
-          MaxHeight="200"
-          MaxWidth="300"
-          Margin="10"
-          VerticalAlignment="Center"
-          IsReadOnly="True"
-          ToolTip="Percorso del file selezionato"/>
+        <!-- DatePicker per la data di fine -->
+        <DatePicker x:Name="EndDatePicker"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    Margin="5"
+                    VerticalAlignment="Center"
+                    ToolTip="Data di fine" />
 
-        <!-- Button per sfogliare, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
-        <Button Content="Sfoglia"
-         Grid.Column="3"
-         Grid.ColumnSpan="1"
-         Grid.Row="1"
-         MaxHeight="200"
-         MinHeight="100"
-         Margin="10"
-         VerticalAlignment="Center"
-         Click="BrowseButton1_Click"/>
+        <!-- TextBox per ComboBox 1 -->
+        <TextBox x:Name="SearchTextBox1"
+                 Grid.Column="0"
+                 Grid.Row="1"
+                 Margin="5"
+                 VerticalAlignment="Center"
+                 TextChanged="SearchTextBox1_TextChanged"
+                 GotFocus="SearchTextBox1_GotFocus"
+                 LostFocus="SearchTextBox1_LostFocus" />
 
-        <!-- TextBox per il percorso del file, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
-        <TextBox x:Name="File1InputField2"
-          Grid.Column="1"
-          Grid.ColumnSpan="2"
-          Grid.Row="2"
-          MaxHeight="200"
-          MaxWidth="300"
-          Margin="10"
-          VerticalAlignment="Center"
-          IsReadOnly="True"
-          ToolTip="Percorso del file selezionato"/>
+        <!-- Popup per suggerimenti 1 -->
+        <Popup x:Name="popup1" PlacementTarget="{Binding ElementName=SearchTextBox1}" IsOpen="False">
+            <Border BorderBrush="Gray" BorderThickness="1" Background="White">
+                <ListBox x:Name="suggestionListBox1" SelectionChanged="SuggestionListBox1_SelectionChanged"/>
+            </Border>
+        </Popup>
 
-        <!-- Button per sfogliare, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
-        <Button Content="Sfoglia"
-         Grid.Column="3"
-         Grid.ColumnSpan="1"
-         Grid.Row="2"
-         MaxHeight="200"
-         MinHeight="100"
-         Margin="10"
-         VerticalAlignment="Center"
-         Click="BrowseButton2_Click"/>
+        <!-- Pannello associato a ComboBox 1 -->
+        <StackPanel x:Name="selectedItemsPanel1"
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    Grid.RowSpan="4"
+                    Margin="5"
+                    Background="Red"
+                    Height="100"/>
 
-        <!-- Button per elaborare, partendo dalla colonna 2 e occupando colonne 2, 3 e 4 -->
+        <!-- TextBox per ComboBox 2 -->
+        <TextBox x:Name="SearchTextBox2"
+                 Grid.Column="3"
+                 Grid.Row="1"
+                 Margin="5"
+                 VerticalAlignment="Center"
+                 TextChanged="SearchTextBox2_TextChanged"
+                 GotFocus="SearchTextBox2_GotFocus"
+                 LostFocus="SearchTextBox2_LostFocus" />
+
+        <!-- Popup per suggerimenti 2 -->
+        <Popup x:Name="popup2" PlacementTarget="{Binding ElementName=SearchTextBox2}" IsOpen="False">
+            <Border BorderBrush="Gray" BorderThickness="1" Background="White">
+                <ListBox x:Name="suggestionListBox2" SelectionChanged="SuggestionListBox2_SelectionChanged"/>
+            </Border>
+        </Popup>
+
+        <!-- Pannello associato a ComboBox 2 -->
+        <StackPanel x:Name="selectedItemsPanel2"
+                    Grid.Column="3"
+                    Grid.Row="3"
+                    Grid.ColumnSpan="2"
+                    Grid.RowSpan="4"
+                    Margin="5"
+                    Background="LightBlue"
+                    Height="100" />
+
+        <!-- Button per elaborare -->
         <Button Content="Elabora"
                 Grid.Column="2"
                 Grid.ColumnSpan="1"
-                Grid.Row="3"
+                Grid.Row="6"
                 MaxHeight="200"
                 MinHeight="100"
                 MinWidth="200"
-                Margin="10"        
+                Margin="5"        
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Click="Elabora_Click"/>
-
 
     </Grid>
 </UserControl>

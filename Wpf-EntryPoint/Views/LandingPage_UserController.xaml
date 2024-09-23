@@ -28,7 +28,7 @@
         </Grid.RowDefinitions>
 
 
-            <TextBlock 
+            <!--<TextBlock 
                 Grid.Column="0"     
                 Grid.ColumnSpan="1"
                 Grid.Row="0"
@@ -38,9 +38,9 @@
                 VerticalAlignment="Center" 
                 TextWrapping="Wrap" 
                 Text="Sms massivi" 
-                TextAlignment="Center"/>
+                TextAlignment="Center"/>-->
 
-            <Button 
+            <!--<Button 
                 Grid.Column="0"     
                 Grid.ColumnSpan="1"
                 Grid.Row="1"
@@ -48,7 +48,7 @@
                 MaxWidth="200"
                 Margin="10"
                 Content="Nuova Lista"
-                Command="{Binding ShowNuovaListaCommand}" />
+                Command="{Binding ShowNuovaListaCommand}" />-->
         
             <Button
                 Grid.Column="0"     
@@ -57,10 +57,10 @@
                 MaxHeight="100"
                 MaxWidth="200"
                 Margin="10"
-                Content="NRI" 
+                Content="RNI" 
                 Command="{Binding ShowNRICommand}" />
 
-        <TextBlock 
+        <!--<TextBlock 
                 Grid.Column="1"     
                 Grid.ColumnSpan="1"
                 Grid.Row="0"
@@ -70,9 +70,9 @@
                 VerticalAlignment="Center" 
                 TextWrapping="Wrap" 
                 Text="Sms massivi" 
-                TextAlignment="Center"/>
+                TextAlignment="Center"/>-->
 
-        <Button
+        <!--<Button
             Grid.Column="1"     
             Grid.ColumnSpan="1"
             Grid.Row="2"
@@ -80,7 +80,7 @@
             MaxWidth="200"
             Margin="10"
             Content="Pulizia +39" 
-            Command="{Binding ShowPulizia39Command}" />
+            Command="{Binding ShowPulizia39Command}" />-->
 
 
     </Grid>

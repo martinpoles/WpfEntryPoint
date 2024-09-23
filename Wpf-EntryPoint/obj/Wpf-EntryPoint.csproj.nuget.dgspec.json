@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj": {}
+    "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj": {
+    "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj",
+        "projectUniqueName": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj",
         "projectName": "Wpf-EntryPoint",
-        "projectPath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj",
+        "projectPath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj",
         "packagesPath": "C:\\Users\\ssoko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\obj\\",
+        "outputPath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ssoko\\AppData\\Roaming\\NuGet\\NuGet.Config",

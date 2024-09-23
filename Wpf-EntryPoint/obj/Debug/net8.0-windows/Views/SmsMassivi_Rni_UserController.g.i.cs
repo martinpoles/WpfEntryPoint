@@ -135,7 +135,7 @@ namespace Wpf_EntryPoint.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Wpf-EntryPoint;component/views/smsmassivi_rni_usercontroller.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Wpf-EntryPoint;V1.0.0.0;component/views/smsmassivi_rni_usercontroller.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\SmsMassivi_Rni_UserController.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

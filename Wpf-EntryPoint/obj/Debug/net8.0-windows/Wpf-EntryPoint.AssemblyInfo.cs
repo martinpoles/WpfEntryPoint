@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Wpf-EntryPoint")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5158735794386ebbf442ca1bafb043e1a6e7715")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a045c5bcedc3a9698b3a09127bdaae60357b5b7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Wpf-EntryPoint")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Wpf-EntryPoint")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

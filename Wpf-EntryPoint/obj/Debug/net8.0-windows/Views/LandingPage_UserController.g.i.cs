@@ -55,7 +55,7 @@ namespace Wpf_EntryPoint.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Wpf-EntryPoint;component/views/landingpage_usercontroller.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Wpf-EntryPoint;V1.0.0.0;component/views/landingpage_usercontroller.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\LandingPage_UserController.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

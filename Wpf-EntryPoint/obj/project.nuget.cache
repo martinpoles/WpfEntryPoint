@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MZnQ8PNO6bw=",
+  "dgSpecHash": "oQqRuy0lkCE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\ProgettoAutomazione\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj",
+  "projectFilePath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Wpf-EntryPoint.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ssoko\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ssoko\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

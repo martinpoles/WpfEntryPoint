@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+using Wpf_EntryPoint.Models;
+using Wpf_EntryPoint.Utility;
+using Wpf_EntryPoint;
 
 namespace Wpf_EntryPoint.Views
 {
@@ -191,3 +195,200 @@ namespace Wpf_EntryPoint.Views
         }
     }
 }
+
+#region
+
+//private void Elabora_Click(object sender, RoutedEventArgs e)
+//{
+//    // Recupera le date selezionate dai DatePicker
+//    DateTime? startDate = StartDatePicker.SelectedDate;
+//    DateTime? endDate = EndDatePicker.SelectedDate;
+
+//    // Verifica se le date sono state selezionate
+//    if (startDate == null || endDate == null)
+//    {
+//        // Mostra un messaggio di errore se qualche data non è selezionata
+//        MessageBox.Show("Tutte le date devono essere selezionate.", "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
+//        return;
+//    }
+
+//    // Converti le date in stringa per ulteriori elaborazioni se necessario
+//    string startDateString = startDate.Value.ToString("yyyy-MM-dd");
+//    string endDateString = endDate.Value.ToString("yyyy-MM-dd");
+
+//    // Esegui l'elaborazione (sostituisci con la tua logica di elaborazione)
+//    if (ElaborazioneFile(startDateString, endDateString/*, opzione1Selezionata, opzione2Selezionata, opzione3Selezionata, numeroInserito*/))
+//    {
+//        MessageBox.Show("L'elaborazione è stata completata correttamente.", "Successo", MessageBoxButton.OK, MessageBoxImage.Information);
+//    }
+//    else
+//    {
+//        MessageBox.Show("Si è verificato un errore durante l'elaborazione. Per favore, riprova.", "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
+//    }
+//}
+
+//// Funzione xXx che gestisce i dati
+//private bool ElaborazioneFile(string startDate, string endDate/*, bool opzione1, bool opzione2, bool opzione3, int numero*/)
+//{
+//    try
+//    {
+//        // Assicurati che le date siano nel formato corretto
+//        if (string.IsNullOrWhiteSpace(startDate) || string.IsNullOrWhiteSpace(endDate))
+//        {
+//            throw new ArgumentException("Le date di inizio e fine, insieme al lasso di tempo, devono essere fornite.");
+//        }
+
+//        // Verifica che le date siano in formato valido
+//        if (!DateTime.TryParse(startDate, out DateTime startDateTime) ||
+//            !DateTime.TryParse(endDate, out DateTime endDateTime))
+//        {
+//            throw new ArgumentException("Le date devono essere nel formato corretto.");
+//        }
+
+//        // Crea la query SQL con parametri
+//        string query = @"SELECT contacts.first_name, contacts.last_name, contacts.phone_number, sms_messages.campaign_id, COLUMN_GET(dynamic_cols, ""old_id_lista"" as CHAR(100)) as old_id_lista
+//                                 FROM sms_messages
+//                                 JOIN contacts ON sms_messages.contact_id = contacts.contact_id
+//                                 WHERE sms_messages.sent_datetime BETWEEN @StartDate AND @EndDate";
+
+
+//        #region Crea il pacchetto
+//        List<ModelRniVolpi> THEDUMPTRUCK = new List<ModelRniVolpi>();
+//        using (MySqlCommand command = new MySqlCommand(query, DatabaseManager.Instance.Connection))
+//        {
+//            //Aggiungi i parametri alla query
+//            command.Parameters.AddWithValue("@StartDate", startDateTime.ToString("yyyy-MM-dd"));
+//            command.Parameters.AddWithValue("@EndDate", endDateTime.ToString("yyyy-MM-dd"));
+
+//            // Esegui la query
+//            using (MySqlDataReader reader = command.ExecuteReader())
+//            {
+//                // Elabora i risultati
+//                while (reader.Read())
+//                {
+
+//                    string provider = "";
+//                    string supplier = "";
+//                    string rni = "";
+
+//                    CRPS record = new CRPS();
+//                    if (LookUpCRPS.lookUpDict.TryGetValue(reader["campaign_id"].ToString(), out record))
+//                    {
+//                        provider = record.Provider;
+//                        supplier = record.Supplier;
+//                        rni = record.RNI;
+
+//                    }
+//                    else
+//                    {
+//                        Console.WriteLine($"campagna non trovata: {reader["campaign_id"].ToString()}");
+
+//                    }
+
+//                    ModelRniVolpi modelRniVolpi = new ModelRniVolpi();
+
+//                    modelRniVolpi.first_name = reader["first_name"].ToString();
+//                    modelRniVolpi.last_name = reader["last_name"].ToString();
+//                    modelRniVolpi.phone_number = reader["phone_number"].ToString();
+//                    modelRniVolpi.provider = provider;
+//                    modelRniVolpi.supplier = supplier;
+//                    modelRniVolpi.old_id_lista = reader["old_id_lista"].ToString();
+//                    modelRniVolpi.campagna = rni;
+//                    THEDUMPTRUCK.Add(modelRniVolpi);
+//                }
+//            }
+//        }
+//        #endregion
+
+//        #region Scrivi
+//        string NomeFile = "MEGASERBATOIO AC RNI " + DateTime.Now.ToString("yyyyMMdd") + ".txt";
+//        string PathFile = "I:\\GESTIONE SERBATOI NEW\\";
+//        CreaFileTesto((PathFile + NomeFile), THEDUMPTRUCK);
+//        #endregion
+
+//    }
+//    catch (Exception ex)
+//    {
+//        // Log dell'eccezione e restituzione di false
+//        MessageBox.Show($"Errore durante l'elaborazione del file: {ex.Message}", "Errore", MessageBoxButton.OK, MessageBoxImage.Error);
+//        return false;
+//    }
+
+//    return true; // Restituisci true se tutto è andato a buon fine
+//}
+
+//private void CreaFileTesto(string filePath, List<ModelRniVolpi> dataList)
+//{
+//    // Definisci i nomi delle colonne (headers)
+//    string[] headers = new string[]
+//    {
+//        "last_name", "first_name", "gender", "address", "street_nr", "city", "postal_code", "country",
+//        "province", "phone_number", "tax_code", "vat", "date_of_birth", "place_of_birth", "phone_number_2",
+//        "phone_number_3", "company_name", "email", "address_2", "address_3", "business_category", "attribute_1",
+//        "attribute_2", "attribute_3", "attribute_4", "attribute_5", "attribute_6", "attribute_7", "attribute_8",
+//        "attribute_9", "attribute_10", "provider", "supplier", "expiration_datetime", "data_scadenza_privacy",
+//        "cpl", "nome_serbatoio", "old_id_lista", "stato_utilizzo", "data_utilizzo", "campagna", "lista"
+//    };
+
+//    // Utilizza StreamWriter che creerà il file se non esiste o lo sovrascriverà se esiste
+//    using (StreamWriter writer = new StreamWriter(filePath, false)) // 'false' per sovrascrivere se esiste
+//    {
+//        // Scrivi la prima riga con gli headers, separati da tabulazioni
+//        writer.WriteLine(string.Join("\t", headers));
+
+//        // Cicla sui dati e scrivi ogni riga successiva
+//        foreach (var data in dataList)
+//        {
+//            // Crea una lista di valori che verranno scritti in ogni riga
+//            List<string> rowValues = new List<string>
+//            {
+//                data.last_name,
+//                data.first_name,
+//                "",  // Gender (aggiungi i tuoi valori)
+//                "",  // Address
+//                "",  // Street number
+//                "",  // City
+//                "",  // Postal code
+//                "",  // Country
+//                "",  // Province
+//                data.phone_number,
+//                "",  // Tax code
+//                "",  // VAT
+//                "",  // Date of birth
+//                "",  // Place of birth
+//                "",  // Phone number 2
+//                "",  // Phone number 3
+//                "",  // Company name
+//                "",  // Email
+//                "",  // Address 2
+//                "",  // Address 3
+//                "",  // Business category
+//                "",  // Attribute_1
+//                "",  // Attribute_2
+//                "",  // Attribute_3
+//                "",  // Attribute_4
+//                "",  // Attribute_5
+//                "",  // Attribute_6
+//                "",  // Attribute_7
+//                "",  // Attribute_8
+//                "",  // Attribute_9
+//                "",  // Attribute_10
+//                data.provider,
+//                data.supplier,
+//                "",  // Expiration datetime
+//                "",  // Data scadenza privacy
+//                "",  // CPL
+//                "",  // Nome serbatoio
+//                data.old_id_lista,
+//                "",  // Stato utilizzo
+//                "",  // Data utilizzo
+//                data.campagna,
+//                ""   // Lista
+//            };
+
+//            // Scrivi la riga nel file di testo, separando i valori con tabulazioni
+//            writer.WriteLine(string.Join("\t", rowValues));
+//        }
+//    }
+//}
+#endregion

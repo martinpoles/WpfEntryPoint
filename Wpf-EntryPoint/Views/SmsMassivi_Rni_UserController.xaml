@@ -8,51 +8,83 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-    <Grid>
-
+    <Grid Background="LightGray">
+        <!-- Contenitore a schermo intero -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
+            <!-- Larghezza DatePicker1 -->
+            <ColumnDefinition Width="Auto" />
+            <!-- Spazio per label1 -->
+            <ColumnDefinition Width="200" />
+            <!-- Spazio tra le sezioni -->
             <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="*" />
+            <!-- Larghezza DatePicker2 -->
+            <ColumnDefinition Width="Auto" />
+            <!-- Spazio per label2 -->
         </Grid.ColumnDefinitions>
+
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <!-- Altezza DataPicker -->
+            <RowDefinition Height="Auto" />
+            <!-- Altezza InputField -->
+            <RowDefinition Height="Auto" />
+            <!-- Altezza StackPanel -->
             <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <!-- Altezza Button -->
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+
+        <!-- BackButton -->
+        <Button Content="Menù"
+                Grid.Column="0"
+                Grid.Row="0"
+                Grid.ColumnSpan="1"
+                Margin="5"        
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Center"
+                Height="20" 
+                Command="{Binding DataContext.ShowLandingPageCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}"/>
         <!-- DatePicker per la data di inizio -->
         <DatePicker x:Name="StartDatePicker"
                     Grid.Column="0"
-                    Grid.Row="0"
+                    Grid.Row="1"
                     Margin="5"
+                    MinWidth="100"
+                    MaxWidth="200"
                     VerticalAlignment="Center"
                     ToolTip="Data di inizio" />
 
         <!-- DatePicker per la data di fine -->
         <DatePicker x:Name="EndDatePicker"
-                    Grid.Column="1"
-                    Grid.Row="0"
+                    Grid.Column="3"
+                    Grid.Row="1"
                     Margin="5"
+                    MinWidth="100"
+                    MaxWidth="200"
                     VerticalAlignment="Center"
                     ToolTip="Data di fine" />
 
-        <!-- TextBox per ComboBox 1 -->
+        <!-- TextBox per ComboBox 1 (Campagne) -->
         <TextBox x:Name="SearchTextBox1"
                  Grid.Column="0"
-                 Grid.Row="1"
+                 Grid.Row="2"
                  Margin="5"
+                 MinWidth="100"
+                 MaxWidth="200"
                  VerticalAlignment="Center"
                  TextChanged="SearchTextBox1_TextChanged"
                  GotFocus="SearchTextBox1_GotFocus"
                  LostFocus="SearchTextBox1_LostFocus" />
+
+        <!-- Label per mostrare il conteggio delle campagne disponibili -->
+        <Label x:Name="CampaignCountLabel"
+               Grid.Column="1"
+               Grid.Row="2"
+               Margin="5"
+               VerticalAlignment="Center"
+               Content="0 Campagne disponibili" />
 
         <!-- Popup per suggerimenti 1 -->
         <Popup x:Name="popup1" PlacementTarget="{Binding ElementName=SearchTextBox1}" IsOpen="False">
@@ -66,20 +98,29 @@
                     Grid.Column="0"
                     Grid.Row="3"
                     Grid.ColumnSpan="2"
-                    Grid.RowSpan="4"
                     Margin="5"
                     Background="Red"
-                    Height="100"/>
+                    VerticalAlignment="Stretch" />
 
-        <!-- TextBox per ComboBox 2 -->
+        <!-- TextBox per ComboBox 2 (Liste) -->
         <TextBox x:Name="SearchTextBox2"
                  Grid.Column="3"
-                 Grid.Row="1"
+                 Grid.Row="2"
                  Margin="5"
+                 MinWidth="100"
+                 MaxWidth="200"
                  VerticalAlignment="Center"
                  TextChanged="SearchTextBox2_TextChanged"
                  GotFocus="SearchTextBox2_GotFocus"
                  LostFocus="SearchTextBox2_LostFocus" />
+
+        <!-- Label per mostrare il conteggio delle liste disponibili -->
+        <Label x:Name="ListCountLabel"
+               Grid.Column="4"
+               Grid.Row="2"
+               Margin="5"
+               VerticalAlignment="Center"
+               Content="0 Liste disponibili" />
 
         <!-- Popup per suggerimenti 2 -->
         <Popup x:Name="popup2" PlacementTarget="{Binding ElementName=SearchTextBox2}" IsOpen="False">
@@ -93,22 +134,22 @@
                     Grid.Column="3"
                     Grid.Row="3"
                     Grid.ColumnSpan="2"
-                    Grid.RowSpan="4"
                     Margin="5"
                     Background="LightBlue"
-                    Height="100" />
+                    VerticalAlignment="Stretch" />
 
         <!-- Button per elaborare -->
         <Button Content="Elabora"
                 Grid.Column="2"
+                Grid.Row="4"
                 Grid.ColumnSpan="1"
-                Grid.Row="6"
-                MaxHeight="200"
-                MinHeight="100"
-                MinWidth="200"
                 Margin="5"        
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
+                MinHeight="100"
+                MaxHeight="200"
+                MinWidth="200"
+                MaxWidth="400"
                 Click="Elabora_Click"/>
 
     </Grid>

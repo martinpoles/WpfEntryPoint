@@ -1,0 +1,25 @@
+Il progetto è un'applicazione WPF basata sul pattern MVVM che gestisce più viste con la navigazione tra diverse UserControl tramite un MainViewModel. Ecco la panoramica del progetto:
+
+Struttura del Progetto:
+ViewModels:
+
+MainViewModel.cs: Gestisce la navigazione tra le diverse viste, inizializzando CurrentView con la vista di atterraggio (Landing Page). I comandi per la navigazione sono implementati usando RelayCommand. Include comandi per cambiare vista tra le pagine disponibili: LandingPage, SmsMassivi_Rni, SmsMassivi_NuovaLista, e PuliziaNumeri_39.
+SmsMassivi_Rni_ViewModel.cs: Gestisce la logica per la vista di gestione SMS massivi RNI, incluse funzioni come il recupero e l'elaborazione delle date e delle campagne selezionate.
+LandingPage_ViewModel.cs: Definisce la logica per la landing page dell'applicazione.
+Views:
+
+LandingPage_UserController.xaml: La vista iniziale dell'applicazione. Collegata a LandingPage_ViewModel.
+SmsMassivi_Rni_UserController.xaml: Interfaccia per la gestione di campagne SMS RNI. Questa pagina ha un'implementazione che gestisce l'inserimento e l'elaborazione dei dati delle campagne e delle liste selezionate, fornendo anche il caricamento di file Excel con dati relativi a provider e supplier.
+Command:
+
+RelayCommand.cs: Implementa il comando base che consente l'esecuzione di azioni dal ViewModel alle viste. Utilizzato per la navigazione tra le diverse UserControl.
+Funzionalità Implementate:
+Navigazione tra viste: Implementata tramite il MainViewModel, consente la navigazione tra diverse pagine come SmsMassivi_Rni, SmsMassivi_NuovaLista, ecc. Utilizza comandi RelayCommand per aggiornare la proprietà CurrentView.
+
+Caricamento File Excel: Implementata una funzione che carica un file Excel dal percorso relativo del progetto. La funzione legge i valori dalle colonne del file Excel e, in caso di celle unite, riprende i valori corretti. I dati sono mappati su un dizionario di oggetti CRPS che contengono informazioni su Provider e Supplier.
+
+Elaborazione Campagne: La vista SmsMassivi_Rni_UserController.xaml gestisce una griglia che contiene controlli come DatePicker e TextBox per raccogliere e filtrare le campagne SMS. I dati raccolti vengono elaborati e inviati tramite query SQL parametrizzate. Durante l'elaborazione, vengono recuperati anche i valori associati di Provider e Supplier dalle campagne usando il dizionario di CRPS creato dal file Excel.
+
+Gestione di file di output: Dopo l'elaborazione dei dati, viene generato un file di testo (TXT) che contiene i risultati.
+
+Pulsante di ritorno al menù: È stato aggiunto un pulsante "Menù" per ritornare alla vista principale (LandingPage_UserController) dalla vista corrente (SmsMassivi_Rni_UserController).

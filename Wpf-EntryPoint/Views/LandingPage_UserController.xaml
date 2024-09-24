@@ -26,31 +26,8 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-
-
-            <!--<TextBlock 
-                Grid.Column="0"     
-                Grid.ColumnSpan="1"
-                Grid.Row="0"
-                MaxHeight="200"
-                MaxWidth="200"
-                HorizontalAlignment="Center" 
-                VerticalAlignment="Center" 
-                TextWrapping="Wrap" 
-                Text="Sms massivi" 
-                TextAlignment="Center"/>-->
-
-            <!--<Button 
-                Grid.Column="0"     
-                Grid.ColumnSpan="1"
-                Grid.Row="1"
-                MaxHeight="200"
-                MaxWidth="200"
-                Margin="10"
-                Content="Nuova Lista"
-                Command="{Binding ShowNuovaListaCommand}" />-->
         
-            <Button
+        <Button
                 Grid.Column="0"     
                 Grid.ColumnSpan="1"
                 Grid.Row="2"
@@ -59,29 +36,6 @@
                 Margin="10"
                 Content="RNI" 
                 Command="{Binding ShowNRICommand}" />
-
-        <!--<TextBlock 
-                Grid.Column="1"     
-                Grid.ColumnSpan="1"
-                Grid.Row="0"
-                MaxHeight="200"
-                MaxWidth="200"
-                HorizontalAlignment="Center" 
-                VerticalAlignment="Center" 
-                TextWrapping="Wrap" 
-                Text="Sms massivi" 
-                TextAlignment="Center"/>-->
-
-        <!--<Button
-            Grid.Column="1"     
-            Grid.ColumnSpan="1"
-            Grid.Row="2"
-            MaxHeight="100"
-            MaxWidth="200"
-            Margin="10"
-            Content="Pulizia +39" 
-            Command="{Binding ShowPulizia39Command}" />-->
-
 
     </Grid>
 </UserControl>

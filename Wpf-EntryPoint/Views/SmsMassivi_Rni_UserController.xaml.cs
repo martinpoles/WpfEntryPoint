@@ -31,7 +31,7 @@ namespace Wpf_EntryPoint.Views
             // Initialize campaign and list data from the database
             availableCampaigns = GetCampaignsFromDB();
             allCampaigns = availableCampaigns;
-            
+
             availableLists = GetListsFromDB();
             allLists = availableLists;
 
@@ -78,7 +78,7 @@ namespace Wpf_EntryPoint.Views
                 .ToList();
 
             var filteredSuggestions = filteredLists
-                .Where(s => s.ToLower().Contains(searchText))
+                .Where(s => s.ToUpper().Contains(searchText))
                 .ToList();
 
             suggestionListBox2.ItemsSource = filteredSuggestions;
@@ -361,37 +361,41 @@ namespace Wpf_EntryPoint.Views
                     throw new ArgumentException("Le date devono essere nel formato corretto.");
                 }
 
-                // Crea la query SQL con parametri
-                string query = @"SELECT 
-                                    contacts.first_name, 
-                                    contacts.last_name, 
-                                    contacts.phone_number, 
-                                    sms_messages.campaign_id, 
-                                    COLUMN_GET(dynamic_cols, ""old_id_lista"" AS CHAR(100)) AS old_id_lista
-                                FROM 
-                                    sms_messages
-                                INNER JOIN contacts ON sms_messages.contact_id = contacts.contact_id
-                                INNER JOIN lists on sms_messages.campaign_id  = lists.campaign_id 
-                                WHERE sms_messages.sent_datetime BETWEEN @StartDate AND @EndDate
-                                AND sms_messages.campaign_id IN (@CampagneSelezionate) 
-                                AND lists.list_name IN (@ListeSelezionate)";
+                // Trasformiamo le campagne e le liste selezionate in formato corretto per la query
+                string campagneParam = string.Join(",", campagneSelezionate.Select(c => $"'{c}'"));
+                string listeParam = string.Join(",", listeSelezionate.Select(l => $"'{l}'"));
 
-                #region Crea il pacchetto
+                // Imposta l'ora del primo giorno a 00:00:01
+                DateTime startOfDayDateTime = startDateTime.Date.AddSeconds(1); // 00:00:01
+
+                // Imposta l'ora dell'ultimo giorno a 23:59:59
+                DateTime endOfDayDateTime = endDateTime.Date.AddDays(1).AddSeconds(-1); // 23:59:59
+
+                // Crea la query SQL con i valori inseriti
+                string queryConParametri = $@"SELECT DISTINCT
+                            contacts.first_name, 
+                            contacts.last_name, 
+                            contacts.phone_number, 
+                            sms_messages.campaign_id, 
+                            COLUMN_GET(dynamic_cols, 'old_id_lista' AS CHAR(100)) AS old_id_lista
+                        FROM 
+                            sms_messages
+                        INNER JOIN contacts ON sms_messages.contact_id = contacts.contact_id
+                        INNER JOIN lists on sms_messages.campaign_id = lists.campaign_id 
+                        WHERE sms_messages.sent_datetime BETWEEN '{startOfDayDateTime:yyyy-MM-dd HH:mm:ss}' AND '{endOfDayDateTime:yyyy-MM-dd HH:mm:ss}'
+                        AND sms_messages.campaign_id IN ({campagneParam}) 
+                        AND lists.list_name IN ({listeParam})";
+
+                // Opzionalmente puoi loggare la query per verificare che sia corretta
+                Console.WriteLine($"Query SQL completa: {queryConParametri}");
+
+                #region Esegui la query
                 List<ModelRniVolpi> THEDUMPTRUCK = new List<ModelRniVolpi>();
-                using (MySqlCommand command = new MySqlCommand(query, DatabaseManager.Instance.Connection))
+                Dictionary<string, ModelRniVolpi> test = new Dictionary<string, ModelRniVolpi>();
+
+                using (MySqlCommand command = new MySqlCommand(queryConParametri, DatabaseManager.Instance.Connection))
                 {
-                    // Aggiungi i parametri alla query
-                    command.Parameters.AddWithValue("@StartDate", startDateTime.ToString("yyyy-MM-dd"));
-                    command.Parameters.AddWithValue("@EndDate", endDateTime.ToString("yyyy-MM-dd"));
-
-                    // Aggiungi i parametri per le campagne selezionate
-                    string campagneParam = string.Join(",", campagneSelezionate.Select(c => $"'{c}'"));
-                    command.Parameters.AddWithValue("@CampagneSelezionate", campagneParam);
-
-                    // Aggiungi i parametri per le liste selezionate
-                    string listeParam = string.Join(",", listeSelezionate.Select(l => $"'{l}'"));
-                    command.Parameters.AddWithValue("@ListeSelezionate", listeParam);
-
+                    command.CommandTimeout = 300; // Aumenta il timeout a 300 secondi, ad esempio
                     // Esegui la query
                     using (MySqlDataReader reader = command.ExecuteReader())
                     {
@@ -401,26 +405,49 @@ namespace Wpf_EntryPoint.Views
                             // Recupero il valore della campagna dal reader
                             string campagna = reader["campaign_id"].ToString();
 
+                            var crpsRecord = new CRPS();
+                            var supplier = "";
+                            var provider = "";
+                            var campagnarni = "";
+
                             // Cerca il valore nel dizionario cRPs
-                            if (cRPs.TryGetValue(campagna, out CRPS crpsRecord))
+                            if (cRPs.TryGetValue(campagna, out crpsRecord))
                             {
-                                // Se il valore è trovato, valorizza provider e supplier
-                                var record = new ModelRniVolpi
-                                {
-                                    first_name = reader["first_name"].ToString(),
-                                    last_name = reader["last_name"].ToString(),
-                                    phone_number = reader["phone_number"].ToString(),
-                                    campagna = campagna,
-                                    old_id_lista = reader["old_id_lista"].ToString(),
-                                    supplier = crpsRecord.Supplier,  // Valorizza supplier dal dizionario
-                                    provider = crpsRecord.Provider     // Valorizza provider dal dizionario
-                                };
-                                THEDUMPTRUCK.Add(record);
+                                supplier = crpsRecord.Supplier;
+                                provider = crpsRecord.Provider;
+                                campagnarni = crpsRecord.RNI;
+                            }
+
+                            // Crea un nuovo record di ModelRniVolpi
+                            var record = new ModelRniVolpi
+                            {
+                                first_name = reader["first_name"].ToString(),
+                                last_name = reader["last_name"].ToString(),
+                                phone_number = reader["phone_number"].ToString(),
+                                campagna = campagnarni,
+                                old_id_lista = reader["old_id_lista"].ToString(),
+                                supplier = supplier,  // Valorizza supplier dal dizionario
+                                provider = provider    // Valorizza provider dal dizionario
+                            };
+
+                            // Aggiungi il record alla lista
+                            THEDUMPTRUCK.Add(record);
+
+                            // Aggiungi il record anche al dizionario 'test', utilizzando 'campagna' come chiave
+                            if (!test.ContainsKey(campagna))
+                            {
+                                test.Add(campagna, record);
+                            }
+                            else
+                            {
+                                // Se necessario, gestisci i casi in cui la chiave esiste già (opzionale)
+                                test[campagna] = record; // Sovrascrivi l'elemento esistente
                             }
                         }
                     }
                 }
                 #endregion
+
 
                 #region Scrivi
                 string NomeFile = "MEGASERBATOIO AC RNI " + DateTime.Now.ToString("yyyyMMdd") + ".txt";
@@ -439,6 +466,7 @@ namespace Wpf_EntryPoint.Views
 
             return true; // Restituisci true se tutto è andato a buon fine
         }
+
 
         private void CreaFileTesto(string filePath, List<ModelRniVolpi> dataList)
         {
@@ -604,7 +632,6 @@ namespace Wpf_EntryPoint.Views
             }
             return cell.Text; // Altrimenti restituisci il valore normale
         }
-
 
     }
 }

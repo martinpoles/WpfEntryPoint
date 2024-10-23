@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\wpf-entrypoint\\wpf-entrypoint\\views\\smsmassivi_rni_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\views\\smsmassivi_rni_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\wpf-entrypoint\\wpf-entrypoint\\views\\smsmassivi_rnireduct_usercontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\views\\smsmassivi_rnireduct_usercontroller.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\wpf-entrypoint\\wpf-entrypoint\\views\\smsmassivi_rnireduct_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\views\\smsmassivi_rnireduct_usercontroller.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|c:\\users\\ssoko\\desktop\\personal\\code\\wpf-entrypoint\\wpf-entrypoint\\viewmodels\\smsmassivi_rnireduct_viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE0EC7A0-E62D-4C20-B248-5F8BB4708A7D}|Wpf-EntryPoint\\Wpf-EntryPoint.csproj|solutionrelative:wpf-entrypoint\\viewmodels\\smsmassivi_rnireduct_viewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 464,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,16 +34,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SmsMassivi_Rni_UserController.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
-              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
-              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
-              "RelativeToolTip": "Wpf-EntryPoint\\Views\\SmsMassivi_Rni_UserController.xaml.cs",
-              "ViewState": "AQIAAL8BAAAAAAAAAAAwwMcBAAAQAAAA",
+              "DocumentIndex": 2,
+              "Title": "SmsMassivi_RniReduct_ViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\ViewModels\\SmsMassivi_RniReduct_ViewModel.cs",
+              "RelativeDocumentMoniker": "Wpf-EntryPoint\\ViewModels\\SmsMassivi_RniReduct_ViewModel.cs",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\ViewModels\\SmsMassivi_RniReduct_ViewModel.cs",
+              "RelativeToolTip": "Wpf-EntryPoint\\ViewModels\\SmsMassivi_RniReduct_ViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T14:49:33.597Z",
+              "WhenOpened": "2024-09-30T08:27:48.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SmsMassivi_RniReduct_UserController.xaml",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_RniReduct_UserController.xaml",
+              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\SmsMassivi_RniReduct_UserController.xaml",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_RniReduct_UserController.xaml",
+              "RelativeToolTip": "Wpf-EntryPoint\\Views\\SmsMassivi_RniReduct_UserController.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-30T08:26:34.258Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SmsMassivi_RniReduct_UserController.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_RniReduct_UserController.xaml.cs",
+              "RelativeDocumentMoniker": "Wpf-EntryPoint\\Views\\SmsMassivi_RniReduct_UserController.xaml.cs",
+              "ToolTip": "C:\\Users\\ssoko\\Desktop\\Personal\\Code\\Wpf-EntryPoint\\Wpf-EntryPoint\\Views\\SmsMassivi_RniReduct_UserController.xaml.cs",
+              "RelativeToolTip": "Wpf-EntryPoint\\Views\\SmsMassivi_RniReduct_UserController.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T08:19:31.153Z"
             }
           ]
         }

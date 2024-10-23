@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using Org.BouncyCastle.Asn1.Cmp;
+using System.ComponentModel;
 using System.Windows.Input;
 
 namespace Wpf_EntryPoint.ViewModels
@@ -26,7 +27,7 @@ namespace Wpf_EntryPoint.ViewModels
             ShowNRICommand = new RelayCommand(ShowNRI);
             ShowPulizia39Command = new RelayCommand(ShowPulizia39);
             ShowLandingPageCommand = new RelayCommand(ShowLandinPage);
-            
+            ShowNRIReductCommand = new RelayCommand(ShowNRIReduct);
 
         }
 
@@ -34,6 +35,7 @@ namespace Wpf_EntryPoint.ViewModels
         public ICommand ShowNRICommand { get; }
         public ICommand ShowPulizia39Command { get; }
         public ICommand ShowLandingPageCommand { get; }
+        public ICommand ShowNRIReductCommand { get; }
 
         private void ShowNuovaLista()
         {
@@ -47,10 +49,14 @@ namespace Wpf_EntryPoint.ViewModels
         {
             CurrentView = new PuliziaNumeri_39_ViewModel();
         }
-
+        private void ShowNRIReduct()
+        {
+            CurrentView = new SmsMassivi_RniReduct_ViewModel();
+        }
         private void ShowLandinPage()
         {
             CurrentView = new LandingPage_ViewModel();
+
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

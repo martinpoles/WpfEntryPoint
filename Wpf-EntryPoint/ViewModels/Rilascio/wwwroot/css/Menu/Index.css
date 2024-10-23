@@ -1,0 +1,141 @@
+.container-menu {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+}
+
+.link-back-go-back-to-home {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-self: end;
+}
+
+    .link-back-go-back-to-home span {
+        font-size: 50px;
+        color: white;
+    }
+
+    .link-back-go-back-to-home button {
+        font-size: 50px;
+        color: white;
+    }
+
+    .link-back-go-back-to-home i {
+        font-size: 50px;
+        color:white;
+    }
+
+.utente-e-notifiche {
+    display: flex;
+    gap: 25px;
+}
+
+.utente-login {
+    display: flex;
+}
+
+.bottone-utente-login {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.pfp {
+    display: flex;
+    border-radius: 50%;
+    background-image: url('../placeholdernotfound.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+.notifiche-container {
+    display: flex;
+}
+
+
+.numero-notifiche {
+    display: flex;
+}
+
+.bottone-notifiche{
+    display:flex;
+}
+
+.center-div-for-bell {
+    align-self: center;
+    font-size: 30px;
+}
+
+
+.utility-bar-menu {
+    height: 10%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.barra-di-ricerca-menu {
+    height: 10%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.flexbox-try {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid-item-menu {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: auto;
+}
+
+    .grid-item-menu h1 {
+        color:white
+    }
+
+.button-special {
+    width: auto !important;
+    display: flex;
+}
+
+.search-form {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.txt-span-benvenuto {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.txt-notifiche-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    color:white;
+}

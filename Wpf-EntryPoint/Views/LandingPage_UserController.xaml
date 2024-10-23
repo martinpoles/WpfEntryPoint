@@ -35,7 +35,7 @@
                 MaxWidth="200"
                 Margin="10"
                 Content="RNI" 
-                Command="{Binding ShowNRICommand}" />
+                Command="{Binding ShowNRIReductCommand}" />
 
     </Grid>
 </UserControl>

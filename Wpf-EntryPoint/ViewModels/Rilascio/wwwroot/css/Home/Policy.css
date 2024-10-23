@@ -1,0 +1,27 @@
+.testo-policy {
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-policy {
+    text-align:left;
+}
+
+.header-policy{
+    text-align:left;
+}
+
+.subtitle-policy {
+    border-bottom: 5px solid #39ff14;
+    display: inline-flex;
+    flex: 0 0 auto;
+    width:max-content;
+    margin: 0px 0px;
+}
+
+.content-policy {
+    text-align: left;
+    margin: 10px 0px;
+    font-size : 20px;
+}
